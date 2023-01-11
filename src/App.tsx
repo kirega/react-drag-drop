@@ -32,7 +32,7 @@ function App() {
       name: "Hello",
       desc: "World",
     },
-    {  
+    {
       id: crypto.randomUUID(),
       name: "Out",
       desc: "In the outdoors",
@@ -51,6 +51,7 @@ function App() {
         onDragOver={handleDragOverForTarget}
         onDrop={handleOnDrop}
       >
+        <h1>A</h1>
         {items.map((item, key) => (
           <div
             id={item.id}
@@ -61,7 +62,7 @@ function App() {
             onDragEnd={handleDragEnd}
           >
             <p>{item.name}</p>
-            <br/>
+            <br />
             <p>{item.desc}</p>
           </div>
         ))}
@@ -71,7 +72,9 @@ function App() {
         onDragEnter={handleDragEnterForTarget}
         onDragOver={handleDragOverForTarget}
         onDrop={handleOnDrop}
-      ></div>
+      >
+        <h1>B</h1>
+      </div>
     </div>
   );
 }

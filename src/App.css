@@ -7,7 +7,7 @@
 }
 .columns > div {
   padding: 10px;
-  width: 200px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
